@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  QRCodeReaderTutorial_Swift
+//  QRCodeTutorial_Swift
 //
-//  Created by Wiseman.Lim on 2024/11/19.
+//  Created by Wiseman.Lim on 2024/11/20.
 //
 
 import UIKit

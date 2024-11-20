@@ -11,26 +11,22 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="QRCodeTutorial_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vah-Jh-HEp">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDT-QR-Q5s">
+                                <rect key="frame" x="0.0" y="59" width="393" height="734"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEw-uV-Wgt">
-                                <rect key="frame" x="116" y="758" width="161" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbd-dT-yqd">
+                                <rect key="frame" x="131.33333333333337" y="760" width="130.66666666666663" height="38"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="7md-SM-Ui2"/>
-                                    <constraint firstAttribute="width" constant="200" id="uXt-QF-ydu"/>
-                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="QR 코드 인식">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
@@ -40,16 +36,23 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dEw-uV-Wgt" secondAttribute="bottom" constant="20" id="4n8-QC-iBR"/>
-                            <constraint firstItem="vah-Jh-HEp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gkK-ol-PAl"/>
-                            <constraint firstItem="vah-Jh-HEp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mqS-ZA-Ya7"/>
-                            <constraint firstItem="vah-Jh-HEp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rcB-lM-ipV"/>
+                            <constraint firstItem="oDT-QR-Q5s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dnc-p3-BG0"/>
+                            <constraint firstItem="oDT-QR-Q5s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Efy-XQ-8oW"/>
+                            <constraint firstItem="Sbd-dT-yqd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HO9-t4-m0P"/>
+                            <constraint firstItem="oDT-QR-Q5s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f8g-kA-H1v"/>
+                            <constraint firstItem="oDT-QR-Q5s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hcK-5s-hqD"/>
+                            <constraint firstItem="oDT-QR-Q5s" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iFf-uE-DFo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Sbd-dT-yqd" secondAttribute="bottom" constant="20" id="rqo-Z8-gpZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="qrcodeBtn" destination="Sbd-dT-yqd" id="qDo-0p-JjG"/>
+                        <outlet property="webView" destination="oDT-QR-Q5s" id="8hs-JE-Ptk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125.95419847328243" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="136.64122137404578" y="4.9295774647887329"/>
         </scene>
     </scenes>
     <resources>
